@@ -1,0 +1,48 @@
+<div class="d-flex">
+  <a
+    [routerLink]="getRoute(item)"
+    class="item w-50 my-2 ml-2">
+
+    <p>{{item.name}}</p>
+    <div
+      class="d-flex ml-2 ingredients">
+      <span
+        class="mr-1"
+        *ngIf="item.ingredients; else showWorkout">
+        <span>{{ item.ingredients | join }}</span>
+      </span>
+      <ng-template #showWorkout>
+        <span>{{ item | workout}}</span>
+      </ng-template>
+    </div>
+
+  </a>
+  <div class="w-50 d-flex justify-content-end align-items-center mr-2">
+    <div
+      *ngIf="toggled"
+      class="d-flex align-items-center mr-5">
+      <span class="ingredients">Delete item?</span>
+      <button
+        class="btn  mx-1 btn-warn"
+        (click)="removeItem()"
+        type="button">
+        Yes
+      </button>
+      <button
+        class="btn btn-basic"
+        (click)="onToggle()"
+        type="button">
+        No
+      </button>
+    </div>
+    <button
+      class="btn"
+      [class.btn-basic]="toggled"
+      [class.btn-warn]="!toggled"
+      (click)="onToggle()"
+      type="button">
+      {{toggled ? 'Cancel' : 'Delete'}}
+    </button>
+  </div>
+</div>
+<div class="divider"></div>

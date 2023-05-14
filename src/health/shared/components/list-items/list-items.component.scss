@@ -1,0 +1,20 @@
+.item {
+  text-decoration: none;
+  color: #000000;
+  text-transform: capitalize;
+  p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+.ingredients {
+  color: #6b6b6b;
+  font-size: 12px;
+}
+.custom-btn {
+  border: none; outline: none; background: inherit
+}
+.btn {
+  font-size: 10px;
+  padding: 6px 12px ;
+}

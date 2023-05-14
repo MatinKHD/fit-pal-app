@@ -1,0 +1,66 @@
+.container {
+  background: white;
+  box-shadow: 0 0 16px 10px #000000b0;
+  color: black;
+  padding: 70px;
+  border-radius: 10px;
+  font-family: sans-serif;
+
+  .form-group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    label {
+      font-size: 14px;
+      margin-right: 10px;
+      line-height: 27px;
+    }
+
+    select {
+      width: 100%;
+    }
+
+    .form-control {
+      border: 1px solid rgba(105, 105, 105, 0.15);
+      outline: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+
+    }
+    div {
+      overflow: hidden;
+      border-radius: 5px;
+      border: 1px solid rgba(105, 105, 105, 0.15);
+
+      .form-control {
+        border: none;
+      }
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:#DCDCDC77;
+        font-size: 12px;
+        padding: 0 10px;
+        margin-left: auto;
+      }
+
+      button {
+        font-size: 12px;
+        margin-left: auto;
+        color: #000000;
+        border-radius: 5px;
+      }
+      button:hover {
+        background: #00000032;
+      }
+    }
+  }
+
+
+  .error-label {
+    color: #f80057;
+  }
+}

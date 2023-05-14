@@ -1,0 +1,14 @@
+.wall {
+  min-height: 100vh;
+  background: url("../../../../../assets/img/landing-wall.jpg") border-box no-repeat center;
+  background-size: cover;
+  color: white;
+  font-family: sans-serif;
+  font-size: 25px;
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.24);
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "users": [
+    {
+      "id": "_a2ycsnfpb",
+      "email": "matin@d.co",
+      "password": "matin123",
+      "gender": "male",
+      "age": 45,
+      "weight": 75,
+      "height": 175
+    },
+    {
+      "id": "_k5gejp8sh",
+      "email": "ali@d.com",
+      "password": "Matin123",
+      "gender": "male",
+      "age": 21,
+      "weight": 80,
+      "height": 160
+    },
+    {
+      "id": "_5lfjdii9l",
+      "email": "anahita@a.com",
+      "password": "soghra123",
+      "gender": "female",
+      "age": 17,
+      "weight": 150,
+      "height": 50
+    },
+    {
+      "id": "_22m4fha2x",
+      "email": "matin@d.com",
+      "password": "Matin123",
+      "gender": "male",
+      "age": 21,
+      "weight": 71.3,
+      "height": 185
+    },
+    {
+      "id": "_4j75ef5lk",
+      "email": "agbar@d.com",
+      "password": "Matin123",
+      "authenticated": false,
+      "gender": "male",
+      "age": 56,
+      "weight": 85,
+      "height": 184
+    }
+  ],
+  "meals": [
+    {
+      "name": "Omllet",
+      "ingredients": [
+        "egss",
+        "tomato"
+      ],
+      "id": "_nsdmoqam3",
+      "exists": true
+    },
+    {
+      "name": "weekday breakfast",
+      "ingredients": [
+        "2 eggs",
+        "noon sangak",
+        "chaee shirin"
+      ],
+      "id": "_v6xjo1a2a",
+      "exists": true
+    }
+  ],
+  "workouts": [
+    {
+      "id": "_4zc4ot09fcu",
+      "name": "Bench Press",
+      "type": "strength",
+      "strength": {
+        "sets": 3,
+        "reps": 8,
+        "weight": 50
+      },
+      "endurance": {
+        "distance": 0,
+        "duration": 0
+      }
+    },
+    {
+      "name": "Treadmill",
+      "type": "endurance",
+      "strength": {
+        "sets": 0,
+        "reps": 0,
+        "weight": 0
+      },
+      "endurance": {
+        "distance": 12,
+        "duration": 90
+      },
+      "id": "_oh16vvhmlc",
+      "exists": true
+    }
+  ],
+  "schedule": [
+    {
+      "id": "_22m4fha2x",
+      "meals": [],
+      "workouts": [],
+      "section": "morning",
+      "timeStamp": 1684047142528
+    }
+  ]
+}

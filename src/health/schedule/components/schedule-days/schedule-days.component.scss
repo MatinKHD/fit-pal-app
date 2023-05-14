@@ -1,0 +1,24 @@
+.days {
+  display: flex;
+  justify-content: space-between;
+
+  .days-btn {
+    border: none;
+    outline: 1px solid #ACACAC3D;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #000000;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  span {
+    padding: 10px;
+    border-radius: 50%;
+  }
+  span:hover , .active {
+    background: #f80057;
+    color: #ffffff;
+  }
+}

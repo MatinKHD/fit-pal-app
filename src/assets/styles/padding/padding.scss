@@ -1,0 +1,311 @@
+.p-5 { padding: 30px !important }
+.pt-5 { padding-top: 30px !important }
+.pl-5 { padding-left: 30px !important }
+.pb-5 { padding-bottom: 30px !important }
+.pr-5 { padding-right: 30px !important }
+
+.p-4 { padding: 24px !important }
+.pt-4 { padding-top: 24px !important }
+.pl-4 { padding-left: 24px !important }
+.pb-4 { padding-bottom: 24px !important }
+.pr-4 { padding-right: 24px !important }
+
+.p-3 { padding: 18px  !important }
+.pt-3 { padding-top: 18px  !important }
+.pl-3 { padding-left: 18px  !important }
+.pb-3 { padding-bottom: 18px  !important }
+.pr-3 { padding-right: 18px  !important }
+
+.p-2 { padding: 12px !important }
+.pt-2 { padding-top: 12px !important }
+.pl-2 { padding-left: 12px !important }
+.pb-2 { padding-bottom: 12px !important }
+.pr-2 { padding-right: 12px !important }
+
+.p-1 { padding: 6px !important }
+.pt-1 { padding-top: 6px !important }
+.pl-1 { padding-left: 6px !important }
+.pb-1 { padding-bottom: 6px !important }
+.pr-1 { padding-right: 6px !important }
+
+.p-0 { padding: 0 !important }
+.pt-0 { padding-top: 0 !important }
+.pl-0 { padding-left: 0 !important }
+.pb-0 { padding-bottom: 0 !important }
+.pr-0 { padding-right: 0 !important }
+
+@mixin p-x($count) { padding-right: $count !important; padding-left: $count !important }
+@mixin p-y($count) { padding-top: $count !important; padding-bottom: $count !important }
+
+.px-5 { @include p-x(30px) }
+.px-4 { @include p-x(24px) }
+.px-3 { @include p-x(18px) }
+.px-2 { @include p-x(12px) }
+.px-1 { @include p-x(6px) }
+.px-0 { @include p-x(0) }
+
+.py-5 { @include p-y(30px) }
+.py-4 { @include p-y(24px) }
+.py-3 { @include p-y(18px) }
+.py-2 { @include p-y(12px) }
+.py-1 { @include p-y(6px) }
+.py-0 { @include p-y(0) }
+
+@media (min-width: 576px) {
+  .p-sm-5 { padding: 30px !important }
+  .pt-sm-5 { padding-top: 30px !important }
+  .pl-sm-5 { padding-left: 30px !important }
+  .pb-sm-5 { padding-bottom: 30px !important }
+  .pr-sm-5 { padding-right: 30px !important }
+
+  .p-sm-4 { padding: 24px !important }
+  .pt-sm-4 { padding-top: 24px !important }
+  .pl-sm-4 { padding-left: 24px !important }
+  .pb-sm-4 { padding-bottom: 24px !important }
+  .pr-sm-4 { padding-right: 24px !important }
+
+  .p-sm-3 { padding: 18px !important }
+  .pt-sm-3 { padding-top: 18px !important }
+  .pl-sm-3 { padding-left: 18px !important }
+  .pb-sm-3 { padding-bottom: 18px !important }
+  .pr-sm-3 { padding-right: 18px !important }
+
+  .p-sm-2 { padding: 12px !important }
+  .pt-sm-2 { padding-top: 12px !important }
+  .pl-sm-2 { padding-left: 12px !important }
+  .pb-sm-2 { padding-bottom: 12px !important }
+  .pr-sm-2 { padding-right: 12px !important }
+
+  .p-sm-1 { padding: 6px !important }
+  .pt-sm-1 { padding-top: 6px !important }
+  .pl-sm-1 { padding-left: 6px !important }
+  .pb-sm-1 { padding-bottom: 6px !important }
+  .pr-sm-1 { padding-right: 6px !important }
+
+  .p-sm-0 { padding: 0 !important }
+  .pt-sm-0 { padding-top: 0 !important }
+  .pl-sm-0 { padding-left: 0 !important }
+  .pb-sm-0 { padding-bottom: 0 !important }
+  .pr-sm-0 { padding-right: 0 !important }
+
+  .px-sm-5 { @include p-x(30px) }
+  .px-sm-4 { @include p-x(24px) }
+  .px-sm-3 { @include p-x(18px) }
+  .px-sm-2 { @include p-x(12px) }
+  .px-sm-1 { @include p-x(6px) }
+  .px-sm-0 { @include p-x(0) }
+
+  .py-sm-5 { @include p-y(30px) }
+  .py-sm-4 { @include p-y(24px) }
+  .py-sm-3 { @include p-y(18px) }
+  .py-sm-2 { @include p-y(12px) }
+  .py-sm-1 { @include p-y(6px) }
+  .py-sm-0 { @include p-y(0) }
+}
+
+@media (min-width: 768px) {
+  .p-md-5 { padding: 30px !important }
+  .pt-md-5 { padding-top: 30px !important }
+  .pl-md-5 { padding-left: 30px !important }
+  .pb-md-5 { padding-bottom: 30px !important }
+  .pr-md-5 { padding-right: 30px !important }
+
+  .p-md-4 { padding: 24px !important }
+  .pt-md-4 { padding-top: 24px !important }
+  .pl-md-4 { padding-left: 24px !important }
+  .pb-md-4 { padding-bottom: 24px !important }
+  .pr-md-4 { padding-right: 24px !important }
+
+  .p-md-3 { padding: 18px !important }
+  .pt-md-3 { padding-top: 18px !important }
+  .pl-md-3 { padding-left: 18px !important }
+  .pb-md-3 { padding-bottom: 18px !important }
+  .pr-md-3 { padding-right: 18px !important }
+
+  .p-md-2 { padding: 12px !important }
+  .pt-md-2 { padding-top: 12px !important }
+  .pl-md-2 { padding-left: 12px !important }
+  .pb-md-2 { padding-bottom: 12px !important }
+  .pr-md-2 { padding-right: 12px !important }
+
+  .p-md-1 { padding: 6px !important }
+  .pt-md-1 { padding-top: 6px !important }
+  .pl-md-1 { padding-left: 6px !important }
+  .pb-md-1 { padding-bottom: 6px !important }
+  .pr-md-1 { padding-right: 6px !important }
+
+  .p-md-0 { padding: 0 !important }
+  .pt-md-0 { padding-top: 0 !important }
+  .pl-md-0 { padding-left: 0 !important }
+  .pb-md-0 { padding-bottom: 0 !important }
+  .pr-md-0 { padding-right: 0 !important }
+
+  .px-md-5 { @include p-x(30px) }
+  .px-md-4 { @include p-x(24px) }
+  .px-md-3 { @include p-x(18px) }
+  .px-md-2 { @include p-x(12px) }
+  .px-md-1 { @include p-x(6px) }
+  .px-md-0 { @include p-x(0) }
+
+  .py-md-5 { @include p-y(30px) }
+  .py-md-4 { @include p-y(24px) }
+  .py-md-3 { @include p-y(18px) }
+  .py-md-2 { @include p-y(12px) }
+  .py-md-1 { @include p-y(6px) }
+  .py-md-0 { @include p-y(0) }
+}
+
+@media (min-width: 992px) {
+  .p-lg-5 { padding: 30px !important }
+  .pt-lg-5 { padding-top: 30px !important }
+  .pl-lg-5 { padding-left: 30px !important }
+  .pb-lg-5 { padding-bottom: 30px !important }
+  .pr-lg-5 { padding-right: 30px !important }
+
+  .p-lg-4 { padding: 24px !important }
+  .pt-lg-4 { padding-top: 24px !important }
+  .pl-lg-4 { padding-left: 24px !important }
+  .pb-lg-4 { padding-bottom: 24px !important }
+  .pr-lg-4 { padding-right: 24px !important }
+
+  .p-lg-3 { padding: 18px !important }
+  .pt-lg-3 { padding-top: 18px !important }
+  .pl-lg-3 { padding-left: 18px !important }
+  .pb-lg-3 { padding-bottom: 18px !important }
+  .pr-lg-3 { padding-right: 18px !important }
+
+  .p-lg-2 { padding: 12px !important }
+  .pt-lg-2 { padding-top: 12px !important }
+  .pl-lg-2 { padding-left: 12px !important }
+  .pb-lg-2 { padding-bottom: 12px !important }
+  .pr-lg-2 { padding-right: 12px !important }
+
+  .p-lg-1 { padding: 6px !important }
+  .pt-lg-1 { padding-top: 6px !important }
+  .pl-lg-1 { padding-left: 6px !important }
+  .pb-lg-1 { padding-bottom: 6px !important }
+  .pr-lg-1 { padding-right: 6px !important }
+
+   .p-lg-0 { padding: 0 !important }
+   .pt-lg-0 { padding-top: 0 !important }
+   .pl-lg-0 { padding-left: 0 !important }
+   .pb-lg-0 { padding-bottom: 0 !important }
+   .pr-lg-0 { padding-right: 0 !important }
+
+  .px-lg-5 { @include p-x(30px) }
+  .px-lg-4 { @include p-x(24px) }
+  .px-lg-3 { @include p-x(18px) }
+  .px-lg-2 { @include p-x(12px) }
+  .px-lg-1 { @include p-x(6px) }
+  .px-lg-0 { @include p-x(0) }
+
+  .py-lg-5 { @include p-y(30px) }
+  .py-lg-4 { @include p-y(24px) }
+  .py-lg-3 { @include p-y(18px) }
+  .py-lg-2 { @include p-y(12px) }
+  .py-lg-1 { @include p-y(6px) }
+  .py-lg-0 { @include p-y(0) }
+}
+
+@media (min-width: 1200px) {
+  .p-xl-5 { padding: 30px !important }
+  .pt-xl-5 { padding-top: 30px !important }
+  .pl-xl-5 { padding-left: 30px !important }
+  .pb-xl-5 { padding-bottom: 30px !important }
+  .pr-xl-5 { padding-right: 30px !important }
+
+  .p-xl-4 { padding: 24px !important }
+  .pt-xl-4 { padding-top: 24px !important }
+  .pl-xl-4 { padding-left: 24px !important }
+  .pb-xl-4 { padding-bottom: 24px !important }
+  .pr-xl-4 { padding-right: 24px !important }
+
+  .p-xl-3 { padding: 18px !important }
+  .pt-xl-3 { padding-top: 18px !important }
+  .pl-xl-3 { padding-left: 18px !important }
+  .pb-xl-3 { padding-bottom: 18px !important }
+  .pr-xl-3 { padding-right: 18px !important }
+
+  .p-xl-2 { padding: 12px !important }
+  .pt-xl-2 { padding-top: 12px !important }
+  .pl-xl-2 { padding-left: 12px !important }
+  .pb-xl-2 { padding-bottom: 12px !important }
+  .pr-xl-2 { padding-right: 12px !important }
+
+  .p-xl-1 { padding: 6px !important }
+  .pt-xl-1 { padding-top: 6px !important }
+  .pl-xl-1 { padding-left: 6px !important }
+  .pb-xl-1 { padding-bottom: 6px !important }
+  .pr-xl-1 { padding-right: 6px !important }
+
+  .p-xl-0 { padding: 0 !important }
+  .pt-xl-0 { padding-top: 0 !important }
+  .pl-xl-0 { padding-left: 0 !important }
+  .pb-xl-0 { padding-bottom: 0 !important }
+  .pr-xl-0 { padding-right: 0 !important }
+
+  .px-xl-5 { @include p-x(30px) }
+  .px-xl-4 { @include p-x(24px) }
+  .px-xl-3 { @include p-x(18px) }
+  .px-xl-2 { @include p-x(12px) }
+  .px-xl-1 { @include p-x(6px) }
+  .px-xl-0 { @include p-x(0) }
+
+  .py-xl-5 { @include p-y(30px) }
+  .py-xl-4 { @include p-y(24px) }
+  .py-xl-3 { @include p-y(18px) }
+  .py-xl-2 { @include p-y(12px) }
+  .py-xl-1 { @include p-y(6px) }
+  .py-xl-0 { @include p-y(0) }
+}
+@media (min-width: 1500px) {
+  .p-xxl-5 { padding: 30px !important }
+  .pt-xxl-5 { padding-top: 30px !important }
+  .pl-xxl-5 { padding-left: 30px !important }
+  .pb-xxl-5 { padding-bottom: 30px !important }
+  .pr-xxl-5 { padding-right: 30px !important }
+
+  .p-xxl-4 { padding: 24px !important }
+  .pt-xxl-4 { padding-top: 24px !important }
+  .pl-xxl-4 { padding-left: 24px !important }
+  .pb-xxl-4 { padding-bottom: 24px !important }
+  .pr-xxl-4 { padding-right: 24px !important }
+
+  .p-xxl-3 { padding: 18px !important }
+  .pt-xxl-3 { padding-top: 18px !important }
+  .pl-xxl-3 { padding-left: 18px !important }
+  .pb-xxl-3 { padding-bottom: 18px !important }
+  .pr-xxl-3 { padding-right: 18px !important }
+
+  .p-xxl-2 { padding: 12px !important }
+  .pt-xxl-2 { padding-top: 12px !important }
+  .pl-xxl-2 { padding-left: 12px !important }
+  .pb-xxl-2 { padding-bottom: 12px !important }
+  .pr-xxl-2 { padding-right: 12px !important }
+
+  .p-xxl-1 { padding: 6px !important }
+  .pt-xxl-1 { padding-top: 6px !important }
+  .pl-xxl-1 { padding-left: 6px !important }
+  .pb-xxl-1 { padding-bottom: 6px !important }
+  .pr-xxl-1 { padding-right: 6px !important }
+
+  .p-xxl-0 { padding: 0!important }
+  .pt-xxl-0 { padding-top: 0!important }
+  .pl-xxl-0 { padding-left: 0!important }
+  .pb-xxl-0 { padding-bottom: 0!important }
+  .pr-xxl-0 { padding-right: 0!important }
+
+  .px-xxl-5 { @include p-x(30px) }
+  .px-xxl-4 { @include p-x(24px) }
+  .px-xxl-3 { @include p-x(18px) }
+  .px-xxl-2 { @include p-x(12px) }
+  .px-xxl-1 { @include p-x(6px) }
+  .px-xxl-0 { @include p-x(0) }
+
+  .py-xxl-5 { @include p-y(30px) }
+  .py-xxl-4 { @include p-y(24px) }
+  .py-xxl-3 { @include p-y(18px) }
+  .py-xxl-2 { @include p-y(12px) }
+  .py-xxl-1 { @include p-y(6px) }
+  .py-xxl-0 { @include p-y(0) }
+}

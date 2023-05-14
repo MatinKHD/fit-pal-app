@@ -1,0 +1,48 @@
+<app-health-navigation></app-health-navigation>
+<div class="workouts d-flex flex-column">
+  <div class="workouts__title d-flex justify-content-between align-items-center py-4 px-5 ">
+    <h1 class="d-flex align-items-center">
+      <img
+        class="icon mr-2"
+        src="../../../../assets/img/love.png"
+        alt="like-icon">
+      <span>Your Workouts</span>
+    </h1>
+    <a
+      class="btn btn-accent d-flex align-items-center px-2 py-1"
+      [routerLink]="['../workouts/new']">
+      <img
+        class="icon mr-2"
+        src="../../../../assets/img/add.png"
+        alt="add-icon">
+      <span>New Workout</span>
+    </a>
+  </div>
+  <div *ngIf="(workouts$ | async) as workouts; else loading">
+    <div class="message" *ngIf="!workouts.length">
+      <img
+        class="icon mr-2"
+        src="../../../../assets/img/crying.png"
+        alt="crying-icon">
+      <span>No workouts, add new workout to start</span>
+    </div>
+    <!------- fetching meals ------------------------>
+    <list-items
+      *ngFor="let workout of workouts"
+      [item]="workout"
+      (remove)="onRemove($event)"
+    >
+    </list-items>
+
+  </div>
+  <ng-template #loading>
+    <div class="message">
+      <img
+        class="icon"
+        src=""
+        alt="loading">
+      Fetching Workouts...!
+    </div>
+  </ng-template>
+  <!--  <pre>{{meals$ | async | json}}</pre>-->
+</div>

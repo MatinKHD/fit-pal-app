@@ -1,0 +1,310 @@
+.m-5 { margin: 30px !important }
+.mt-5 { margin-top: 30px !important }
+.ml-5 { margin-left: 30px !important }
+.mb-5 { margin-bottom: 30px !important }
+.mr-5 { margin-right: 30px !important }
+
+.m-4 { margin: 24px !important }
+.mt-4 { margin-top: 24px !important }
+.ml-4 { margin-left: 24px !important }
+.mb-4 { margin-bottom: 24px !important }
+.mr-4 { margin-right: 24px !important }
+
+.m-3 { margin: 18px !important }
+.mt-3 { margin-top: 18px !important }
+.ml-3 { margin-left: 18px !important }
+.mb-3 { margin-bottom: 18px !important }
+.mr-3 { margin-right: 18px !important }
+
+.m-2 { margin: 12px !important }
+.mt-2 { margin-top: 12px !important }
+.ml-2 { margin-left: 12px !important }
+.mb-2 { margin-bottom: 12px !important }
+.mr-2 { margin-right: 12px !important }
+
+.m-1 { margin: 6px !important }
+.mt-1 { margin-top: 6px !important }
+.ml-1 { margin-left: 6px !important }
+.mb-1 { margin-bottom: 6px !important }
+.mr-1 { margin-right: 6px !important }
+
+.mt-0 { margin-top: 0 !important }
+.ml-0 { margin-left: 0 !important }
+.mb-0 { margin-bottom: 0 !important }
+.mr-0 { margin-right: 0 !important }
+
+@mixin m-x($count) { margin-left: $count !important; margin-right: $count !important }
+@mixin m-y($count) { margin-top: $count !important; margin-bottom: $count !important }
+
+.mx-5 { @include m-x(30px) }
+.mx-4 { @include m-x(24px) }
+.mx-3 { @include m-x(18px) }
+.mx-2 { @include m-x(12px) }
+.mx-1 { @include m-x(6px) }
+.mx-0 { @include m-x(0) }
+
+.my-5 { @include m-y(30px) }
+.my-4 { @include m-y(24px) }
+.my-3 { @include m-y(18px) }
+.my-2 { @include m-y(12px) }
+.my-1 { @include m-y(6px) }
+.my-0 { @include m-y(0) }
+
+
+@media (min-width: 576px) {
+  .m-sm-5 { margin: 30px !important }
+  .mt-sm-5 { margin-top: 30px !important }
+  .ml-sm-5 { margin-left: 30px !important }
+  .mb-sm-5 { margin-bottom: 30px !important }
+  .mr-sm-5 { margin-right: 30px !important }
+
+  .m-sm-4 { margin: 24px !important }
+  .mt-sm-4 { margin-top: 24px !important }
+  .ml-sm-4 { margin-left: 24px !important }
+  .mb-sm-4 { margin-bottom: 24px !important }
+  .mr-sm-4 { margin-right: 24px !important }
+
+  .m-sm-3 { margin: 18px !important }
+  .mt-sm-3 { margin-top: 18px !important }
+  .ml-sm-3 { margin-left: 18px !important }
+  .mb-sm-3 { margin-bottom: 18px !important }
+  .mr-sm-3 { margin-right: 18px !important }
+
+  .m-sm-2 { margin: 12px !important }
+  .mt-sm-2 { margin-top: 12px !important }
+  .ml-sm-2 { margin-left: 12px !important }
+  .mb-sm-2 { margin-bottom: 12px !important }
+  .mr-sm-2 { margin-right: 12px !important  }
+
+  .m-sm-1 { margin: 6px !important }
+  .mt-sm-1 { margin-top: 6px !important }
+  .ml-sm-1 { margin-left: 6px !important }
+  .mb-sm-1 { margin-bottom: 6px !important }
+  .mr-sm-1 { margin-right: 6px !important }
+
+  .mt-sm-0 { margin-top: 0 !important }
+  .ml-sm-0 { margin-left: 0 !important }
+  .mb-sm-0 { margin-bottom: 0 !important }
+  .mr-sm-0 { margin-right: 0 !important }
+
+  .mx-sm-5 { @include m-x(30px) }
+  .mx-sm-4 { @include m-x(24px) }
+  .mx-sm-3 { @include m-x(18px) }
+  .mx-sm-2 { @include m-x(12px) }
+  .mx-sm-1 { @include m-x(6px) }
+  .mx-sm-0 { @include m-x(0) }
+
+  .my-sm-5 { @include m-y(30px) }
+  .my-sm-4 { @include m-y(24px) }
+  .my-sm-3 { @include m-y(18px) }
+  .my-sm-2 { @include m-y(12px) }
+  .my-sm-1 { @include m-y(6px) }
+  .my-sm-0 { @include m-y(0) }
+
+}
+
+@media (min-width: 768px) {
+  .m-md-5 { margin: 30px !important }
+  .mt-md-5 { margin-top: 30px !important }
+  .ml-md-5 { margin-left: 30px !important }
+  .mb-md-5 { margin-bottom: 30px !important }
+  .mr-md-5 { margin-right: 30px !important }
+
+  .m-md-4 { margin: 24px !important }
+  .mt-md-4 { margin-top: 24px !important }
+  .ml-md-4 { margin-left: 24px !important }
+  .mb-md-4 { margin-bottom: 24px !important }
+  .mr-md-4 { margin-right: 24px !important }
+
+  .m-md-3 { margin: 18px !important }
+  .mt-md-3 { margin-top: 18px !important }
+  .ml-md-3 { margin-left: 18px !important }
+  .mb-md-3 { margin-bottom: 18px !important }
+  .mr-md-3 { margin-right: 18px !important }
+
+  .m-md-2 { margin: 12px  !important}
+  .mt-md-2 { margin-top: 12px !important }
+  .ml-md-2 { margin-left: 12px !important }
+  .mb-md-2 { margin-bottom: 12px !important }
+  .mr-md-2 { margin-right: 12px !important }
+
+  .m-md-1 { margin: 6px !important }
+  .mt-md-1 { margin-top: 6px !important }
+  .ml-md-1 { margin-left: 6px !important }
+  .mb-md-1 { margin-bottom: 6px !important }
+  .mr-md-1 { margin-right: 6px !important }
+
+  .mt-md-0 { margin-top: 0 !important }
+  .ml-md-0 { margin-left: 0 !important }
+  .mb-md-0 { margin-bottom: 0 !important }
+  .mr-md-0 { margin-right: 0 !important }
+
+  .mx-md-5 { @include m-x(30px) }
+  .mx-md-4 { @include m-x(24px) }
+  .mx-md-3 { @include m-x(18px) }
+  .mx-md-2 { @include m-x(12px) }
+  .mx-md-1 { @include m-x(6px) }
+  .mx-md-0 { @include m-x(0) }
+
+  .my-md-5 { @include m-y(30px) }
+  .my-md-4 { @include m-y(24px) }
+  .my-md-3 { @include m-y(18px) }
+  .my-md-2 { @include m-y(12px) }
+  .my-md-1 { @include m-y(6px) }
+  .my-md-0 { @include m-y(0) }
+
+}
+
+@media (min-width: 992px) {
+  .m-lg-5 { margin: 30px !important }
+  .mt-lg-5 { margin-top: 30px !important }
+  .ml-lg-5 { margin-left: 30px !important }
+  .mb-lg-5 { margin-bottom: 30px !important }
+  .mr-lg-5 { margin-right: 30px !important }
+
+  .m-lg-4 { margin: 24px !important }
+  .mt-lg-4 { margin-top: 24px !important }
+  .ml-lg-4 { margin-left: 24px !important }
+  .mb-lg-4 { margin-bottom: 24px !important }
+  .mr-lg-4 { margin-right: 24px !important }
+
+  .m-lg-3 { margin: 18px !important }
+  .mt-lg-3 { margin-top: 18px !important }
+  .ml-lg-3 { margin-left: 18px !important }
+  .mb-lg-3 { margin-bottom: 18px !important }
+  .mr-lg-3 { margin-right: 18px !important }
+
+  .m-lg-2 { margin: 12px !important }
+  .mt-lg-2 { margin-top: 12px !important }
+  .ml-lg-2 { margin-left: 12px !important }
+  .mb-lg-2 { margin-bottom: 12px !important }
+  .mr-lg-2 { margin-right: 12px !important }
+
+  .m-lg-1 { margin: 6px !important }
+  .mt-lg-1 { margin-top: 6px !important }
+  .ml-lg-1 { margin-left: 6px !important }
+  .mb-lg-1 { margin-bottom: 6px !important }
+  .mr-lg-1 { margin-right: 6px !important }
+
+  .mt-lg-0 { margin-top: 0 !important }
+  .ml-lg-0 { margin-left: 0 !important }
+  .mb-lg-0 { margin-bottom: 0 !important }
+  .mr-lg-0 { margin-right: 0 !important }
+
+  .mx-lg-5 { @include m-x(30px) }
+  .mx-lg-4 { @include m-x(24px) }
+  .mx-lg-3 { @include m-x(18px) }
+  .mx-lg-2 { @include m-x(12px) }
+  .mx-lg-1 { @include m-x(6px) }
+  .mx-lg-0 { @include m-x(0) }
+
+  .my-lg-5 { @include m-y(30px) }
+  .my-lg-4 { @include m-y(24px) }
+  .my-lg-3 { @include m-y(18px) }
+  .my-lg-2 { @include m-y(12px) }
+  .my-lg-1 { @include m-y(6px) }
+  .my-lg-0 { @include m-y(0) }
+
+}
+
+@media (min-width: 1200px) {
+  .m-xl-5 { margin: 30px !important }
+  .mt-xl-5 { margin-top: 30px !important }
+  .ml-xl-5 { margin-left: 30px !important }
+  .mb-xl-5 { margin-bottom: 30px !important }
+  .mr-xl-5 { margin-right: 30px !important }
+
+  .m-xl-4 { margin: 24px !important }
+  .mt-xl-4 { margin-top: 24px !important }
+  .ml-xl-4 { margin-left: 24px !important }
+  .mb-xl-4 { margin-bottom: 24px !important }
+  .mr-xl-4 { margin-right: 24px !important }
+
+  .m-xl-3 { margin: 18px !important }
+  .mt-xl-3 { margin-top: 18px !important }
+  .ml-xl-3 { margin-left: 18px !important }
+  .mb-xl-3 { margin-bottom: 18px !important }
+  .mr-xl-3 { margin-right: 18px !important }
+
+  .m-xl-2 { margin: 12px !important }
+  .mt-xl-2 { margin-top: 12px !important }
+  .ml-xl-2 { margin-left: 12px !important }
+  .mb-xl-2 { margin-bottom: 12px !important }
+  .mr-xl-2 { margin-right: 12px !important }
+
+  .m-xl-1 { margin: 6px !important }
+  .mt-xl-1 { margin-top: 6px !important }
+  .ml-xl-1 { margin-left: 6px !important }
+  .mb-xl-1 { margin-bottom: 6px !important }
+  .mr-xl-1 { margin-right: 6px !important }
+
+  .mt-xl-0 { margin-top: 0 !important }
+  .ml-xl-0 { margin-left: 0 !important }
+  .mb-xl-0 { margin-bottom: 0 !important }
+  .mr-xl-0 { margin-right: 0 !important }
+
+  .mx-xl-5 { @include m-x(30px) }
+  .mx-xl-4 { @include m-x(24px) }
+  .mx-xl-3 { @include m-x(18px) }
+  .mx-xl-2 { @include m-x(12px) }
+  .mx-xl-1 { @include m-x(6px) }
+  .mx-xl-0 { @include m-x(0) }
+
+  .my-xl-5 { @include m-y(30px) }
+  .my-xl-4 { @include m-y(24px) }
+  .my-xl-3 { @include m-y(18px) }
+  .my-xl-2 { @include m-y(12px) }
+  .my-xl-1 { @include m-y(6px) }
+  .my-xl-0 { @include m-y(0) }
+
+}
+@media (min-width: 1500px) {
+  .m-xxl-5 { margin: 30px !important }
+  .mt-xxl-5 { margin-top: 30px !important }
+  .ml-xxl-5 { margin-left: 30px !important }
+  .mb-xxl-5 { margin-bottom: 30px !important }
+  .mr-xxl-5 { margin-right: 30px !important }
+
+  .m-xxl-4 { margin: 24px !important }
+  .mt-xxl-4 { margin-top: 24px !important }
+  .ml-xxl-4 { margin-left: 24px !important }
+  .mb-xxl-4 { margin-bottom: 24px !important }
+  .mr-xxl-4 { margin-right: 24px !important }
+
+  .m-xxl-3 { margin: 18px !important }
+  .mt-xxl-3 { margin-top: 18px !important }
+  .ml-xxl-3 { margin-left: 18px !important }
+  .mb-xxl-3 { margin-bottom: 18px !important }
+  .mr-xxl-3 { margin-right: 18px !important }
+
+  .m-xxl-2 { margin: 12px !important }
+  .mt-xxl-2 { margin-top: 12px !important }
+  .ml-xxl-2 { margin-left: 12px !important }
+  .mb-xxl-2 { margin-bottom: 12px !important }
+  .mr-xxl-2 { margin-right: 12px !important }
+
+  .m-xxl-1 { margin: 6px !important }
+  .mt-xxl-1 { margin-top: 6px !important }
+  .ml-xxl-1 { margin-left: 6px !important }
+  .mb-xxl-1 { margin-bottom: 6px !important }
+  .mr-xxl-1 { margin-right: 6px !important }
+
+  .mt-xxl-0 { margin-top: 0 !important }
+  .ml-xxl-0 { margin-left: 0 !important }
+  .mb-xxl-0 { margin-bottom: 0 !important }
+  .mr-xxl-0 { margin-right: 0 !important }
+
+  .mx-xxl-5 { @include m-x(30px) }
+  .mx-xxl-4 { @include m-x(24px) }
+  .mx-xxl-3 { @include m-x(18px) }
+  .mx-xxl-2 { @include m-x(12px) }
+  .mx-xxl-1 { @include m-x(6px) }
+  .mx-xxl-0 { @include m-x(0) }
+
+  .my-xxl-5 { @include m-y(30px) }
+  .my-xxl-4 { @include m-y(24px) }
+  .my-xxl-3 { @include m-y(18px) }
+  .my-xxl-2 { @include m-y(12px) }
+  .my-xxl-1 { @include m-y(6px) }
+  .my-xxl-0 { @include m-y(0) }
+}

@@ -1,0 +1,106 @@
+<div class="workout-form">
+  <form [formGroup]="form">
+    <div class="form-group py-2 px-4">
+      <label>
+        <h3>Workout name</h3>
+        <input
+          class="form-control my-2 mx-4 w-90"
+          [placeholder]="placeholder"
+          formControlName="name"
+          type="text">
+        <div class="error w-50 p-0" *ngIf="required">
+          Workout name is required.
+        </div>
+      </label>
+    </div>
+
+
+    <div class="form-group py-2 px-4">
+      <label>
+        <h3>Type</h3>
+        <workout-type formControlName="type"></workout-type>
+      </label>
+    </div>
+
+    <div class="form-group py-2 px-5 mx-4">
+      <!--strength-->
+      <div *ngIf="this.form.get('type')?.value === 'strength'" class="workout-fields" formGroupName="strength">
+        <label>
+          <h3>Sets</h3>
+          <input class="form-control" type="number" formControlName="sets">
+        </label>
+        <label>
+          <h3>Reps</h3>
+          <input class="form-control" type="number" formControlName="reps">
+        </label>
+        <label>
+          <h3>Weight <span>(kg)</span></h3>
+          <input class="form-control" type="number" formControlName="weight">
+        </label>
+      </div>
+      <!--endurance-->
+      <div *ngIf="this.form.get('type')?.value === 'endurance'" class="workout-fields" formGroupName="endurance">
+        <label>
+          <h3>Distance <span>(km)</span></h3>
+          <input class="form-control" type="number" formControlName="distance">
+        </label>
+        <label>
+          <h3>Duration <span>(minutes)</span></h3>
+          <input class="form-control" type="number" formControlName="duration">
+        </label>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <div
+      class="d-flex align-items-center mx-4 py-3"
+      [class.justify-content-end]="toggled"
+      [class.justify-content-between]="!toggled">
+      <div
+        *ngIf="!toggled"
+        class="d-flex justify-content-start align-items-start">
+        <button
+          class="btn btn-primary mr-3"
+          (click)="exist ? updateWorkout() : createWorkout()"
+          [class.disabled]="form.invalid"
+          type="button">
+          {{exist ? 'Update' : 'Create Workout'}}
+        </button>
+        <a
+          class="btn btn-basic"
+          [routerLink]="'../'">
+          Cancel
+        </a>
+      </div>
+      <div
+        *ngIf="exist"
+        class="d-flex justify-content-end align-items-center">
+        <div
+          *ngIf="toggled"
+          class="d-flex align-items-center mr-5">
+          <span class="ingredients">Delete item?</span>
+          <button
+            class="btn  mx-1 btn-warn"
+            (click)="removeWorkout()"
+            type="button">
+            Yes
+          </button>
+          <button
+            class="btn btn-basic"
+            (click)="onToggle()"
+            type="button">
+            No
+          </button>
+        </div>
+        <button
+          class="btn"
+          [class.btn-basic]="toggled"
+          [class.btn-warn]="!toggled"
+          (click)="onToggle()"
+          type="button">
+          {{toggled ? 'Cancel' : 'Delete'}}
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

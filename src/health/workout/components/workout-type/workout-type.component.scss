@@ -1,0 +1,27 @@
+.container {
+  margin: 10px 0 10px 15px;
+  .pane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    margin: 10px;
+    font-size: 14px;
+    color: #6b6b6b;
+    border: 1px solid #9e9e9e40;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: .2s all ease-in-out;
+  }
+
+  .pane:hover {
+    background: #9e9e9e40;
+    color: #464646;
+  }
+  .active {
+    background: #9e9e9e40;
+    color: #464646;
+  }
+}

@@ -1,0 +1,39 @@
+.container {
+  h4 {
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-family: cursive;
+      font-style: italic;
+      font-size: 35px;
+      letter-spacing: 0;
+    }
+  }
+
+  .btn-container {
+    margin: 50px 0;
+
+    span {
+      font-weight: 600;
+      line-height: 35px;
+    }
+
+    button {
+      border: none;
+      outline: none;
+      padding: 10px 20px;
+      margin: 0 30px;
+      border-radius: 10px;
+      transition: all .2s;
+    }
+
+    button:hover {
+      color: white;
+      background: #f80057;
+    }
+  }
+}
+

@@ -1,0 +1,57 @@
+<div class="container">
+  <h4
+    class="pb-4">
+      Biometric
+  </h4>
+  <form [formGroup]="biometricForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Gender:</label>
+      <select class="form-control" formControlName="gender">
+        <option value="none">None</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Age:</label>
+      <input
+        class="form-control"
+        formControlName="age"
+        min="10"
+        max="100"
+        type="number">
+    </div>
+    <div class="form-group">
+      <label>Wight:</label>
+      <input
+        step="10"
+        class="form-control"
+        formControlName="weight"
+        type="number">
+    </div>
+    <div class="form-group">
+      <label>Height:</label>
+      <input
+        step="10"
+        max="350"
+        class="form-control"
+        formControlName="height"
+        type="number">
+    </div>
+    <div class="error" *ngIf="genderRequired">
+      You must select a gender!
+    </div>
+    <div class="error" *ngIf="ageRequired">
+      Please enter valid age!
+    </div>
+    <div class="error" *ngIf="weightRequired">
+      Please enter your weight.
+    </div>
+    <div class="error" *ngIf="heightRequired">
+      Please enter your height.
+    </div>
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-primary mt-4" type="submit">Done <span>&checkmark;</span></button>
+    </div>
+  </form>
+</div>

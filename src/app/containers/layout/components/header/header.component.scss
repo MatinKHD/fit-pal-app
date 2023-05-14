@@ -1,0 +1,36 @@
+nav {
+  background: #f80057;
+  box-shadow: -1px 2px 12px 2px dimgray;
+  color: white;
+  font-family: cursive;
+  padding: 5px 0;
+  a {
+    color: white;
+    transition: all .2s;
+    text-decoration: none;
+  }
+  a:hover {
+    color: black;
+  }
+
+  .home-container {
+    flex: .3 0 0;
+  }
+
+  .logo-container {
+    flex: .4 0 0;
+
+    img {
+      width: 35px;
+    }
+
+  }
+  .user-container {
+    flex: .3 0 0;
+
+    * {
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}

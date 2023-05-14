@@ -1,0 +1,39 @@
+.workout-form {
+  width: 500px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.custom-input {
+  border: none;
+  outline: none;
+}
+
+.icon-container {
+  background: #DCDCDC77;
+}
+
+.icon-container:hover {
+  background: #00000032;
+}
+.workout-fields {
+
+  label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    h3 {
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-right: 20px;
+      display: flex;
+      color: #6b6b6b;
+    }
+    input {
+      width: 60%;
+    }
+  }
+}
